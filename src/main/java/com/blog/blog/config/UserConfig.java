@@ -12,10 +12,7 @@ public class UserConfig {
         return new UserService(); 
     }
 
-    @Bean
-    ModelMapper modelMapperBean() { 
-        return new ModelMapper(); 
-    } 
+    
     
 
 }

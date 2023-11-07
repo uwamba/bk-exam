@@ -19,7 +19,7 @@ public class PostService {
 	    @Autowired
 	    private PostRepo postRepo; 
 	   
-	    @Autowired
+	   
 	    private ModelMapper mapper; 
 	  
 	    public PostResponse getPostById(int id) { 

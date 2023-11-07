@@ -1,27 +1,18 @@
 package com.blog.blog.service;
 import com.blog.blog.entity.UserEntity;
 import com.blog.blog.repository.UserRepo;
-import com.blog.blog.response.LoginMessage;
 import com.blog.blog.response.UserResponse;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
-import java.util.Set; 
 @Service
 public class UserService {
 	    @Autowired
 	    private UserRepo userRepo; 
 	  
-	    @Autowired
+	   
 	    private ModelMapper mapper; 
 	    @Autowired
 	    private PasswordEncoder passwordEncoder;
